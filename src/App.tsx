@@ -162,14 +162,19 @@ const App = () => {
               style={{ bottom: 20 }}
               justify={"center"}
             >
-              <a href={"https://korotkovs.com"} target="_blank">
-                <Image
-                  alt={"korotkovs studio"}
-                  height={42 / 1.5}
-                  src={"/images/korotkovs.png"}
-                  width={185.5 / 1.5}
-                />
-              </a>
+              <div
+                style={{
+                  height: 42 / 1.5,
+                  width: 185.5 / 1.5,
+                }}
+              >
+                <a href={"https://korotkovs.com"} target="_blank">
+                  <Image
+                    alt={"korotkovs studio"}
+                    src={"/images/korotkovs.png"}
+                  />
+                </a>
+              </div>
             </Flex>
           </Flex>
         </Flex>
