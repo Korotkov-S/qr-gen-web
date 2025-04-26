@@ -1,4 +1,6 @@
-Simple QR Code generate service on client site
+Simple QR Code generate service on a client side.
+
+RSBuild + React + Mantine.
 
 ## Setup
 
