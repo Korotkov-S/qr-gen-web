@@ -30,7 +30,7 @@ export function Dropzone(props: Partial<DropzoneProps>) {
 
         <div>
           <Text inline size="xl">
-            Перенисите картинку или нажмите на область
+            Перенесите картинку или нажмите на область
           </Text>
           <Text inline mt={7} size="sm">
             Вы можете выбрать один файл не более 5мб

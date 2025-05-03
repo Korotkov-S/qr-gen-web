@@ -78,6 +78,7 @@ const App = () => {
                 rightSection={<CloseButton onClick={cleanURL} />}
                 size="lg"
                 value={url}
+                autoCapitalize="none"
               />
 
               <ColorInput
