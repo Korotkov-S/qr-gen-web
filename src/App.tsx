@@ -9,7 +9,8 @@ import {
   ColorInput,
   Button,
   Text,
-  Image,
+  Anchor,
+  Box,
 } from "@mantine/core";
 import { FileWithPath } from "@mantine/dropzone";
 import { Dropzone, QRCode, QRRef } from "./components";
@@ -73,7 +74,7 @@ const App = () => {
               <TextInput
                 description="Ссылка на сайт"
                 onChange={onChangeText}
-                placeholder="https://qr.korotkovs.ru"
+                placeholder="https://qr.korotkov.dev"
                 radius={"lg"}
                 rightSection={<CloseButton onClick={cleanURL} />}
                 size="lg"
@@ -163,19 +164,36 @@ const App = () => {
               style={{ bottom: 20 }}
               justify={"center"}
             >
-              <div
-                style={{
-                  height: 42 / 1.5,
-                  width: 185.5 / 1.5,
-                }}
+              <Anchor
+                href="https://kordev.team"
+                target="_blank"
+                rel="noopener noreferrer"
+                underline="never"
+                c="inherit"
+                style={{ textDecoration: "none" }}
               >
-                <a href={"https://korotkovs.com"} target="_blank">
-                  <Image
-                    alt={"korotkovs studio"}
-                    src={"/images/korotkovs.png"}
-                  />
-                </a>
-              </div>
+                <Flex align="center" gap="xs" wrap="nowrap">
+                  <Box
+                    w={40}
+                    h={40}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      borderRadius: 8,
+                      background:
+                        "linear-gradient(to bottom right, #2563eb, #9333ea)",
+                    }}
+                  >
+                    <Text size="sm" fw={600} c="white">
+                      KOR
+                    </Text>
+                  </Box>
+                  <Text fw={600} size="sm" c="dark.9">
+                    DevTeam
+                  </Text>
+                </Flex>
+              </Anchor>
             </Flex>
           </Flex>
         </Flex>

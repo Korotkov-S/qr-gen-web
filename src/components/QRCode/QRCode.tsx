@@ -28,7 +28,7 @@ const options: Options = {
   cornersSquareOptions: {
     type: "extra-rounded",
   },
-  data: "https://qr.korotkovs.ru",
+  data: "https://qr.korotkov.dev",
   dotsOptions: {
     color: "#000000",
     type: "rounded",
